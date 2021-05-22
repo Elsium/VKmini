@@ -7,6 +7,61 @@
     </head>
 
     <body>
+        <header>
+            <div class="head_left">
+                <span class="iq">IQ</span>
+                <span class="managers">Managers</span>
+            </div>
+            <div class="head_right">
+                <span class="vezde">#Вездекод</span>
+            </div>
+        </header>
 
+        <main>
+            <div class="maincontainer">
+                <div class="imgnname">
+                    <img src="assets/img/avatars/first.jpg" class="img">
+                    <span class="iq underimg">Ли <span class="managers">Дмитрий</span></span>
+                    <div class="lineunder"></div>
+                </div>
+                <div class="tab">
+                    <div class="butnline">
+                        <div class="but">
+                            <button class="tablinks" onclick="ChangeTab(event, 'first')" id="welcome">Краткая информация</button>
+                            <button class="tablinks" onclick="ChangeTab(event, 'second')">Языки</button>
+                            <button class="tablinks" onclick="ChangeTab(event, 'third')">Социальные сети</button>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="info">
+                        <div id="first" class="tabcontent">
+                            <ol>
+                                <li>Первый факт</li>
+                                <li>Второй факт</li>
+                                <li>Третий факт</li>
+                            </ol>
+                        </div>
+                        <div id="second" class="tabcontent">
+                            #
+                        </div>
+                        <div id="third" class="tabcontent">
+                            <div class="social">
+                                <a href="https://instagram.com/d.elsium">
+                                    <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
+                                </a>
+                                <a href="https://vk.com/elsium">
+                                    <img src="assets/img/icons/vk.png" height="100" width="100"/>
+                                </a>
+                                <a href="https://t.me/Dou_Ble">
+                                    <img src="assets/img/icons/telegram.png" height="90" width="90"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/scripts/index.js"></script>
     </body>
+
 </html>
