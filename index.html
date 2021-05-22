@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>IQManagers</title>
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
 
     <body>
@@ -16,52 +17,247 @@
                 <span class="vezde">#Вездекод</span>
             </div>
         </header>
+        <div class="mainblock">
 
-        <main>
-            <div class="maincontainer">
-                <div class="imgnname">
-                    <img src="assets/img/avatars/first.jpg" class="img">
-                    <span class="iq underimg">Ли <span class="managers">Дмитрий</span></span>
-                    <div class="lineunder"></div>
-                </div>
-                <div class="tab">
-                    <div class="butnline">
-                        <div class="but">
-                            <button class="tablinks" onclick="ChangeTab(event, 'first')" id="welcome">Краткая информация</button>
-                            <button class="tablinks" onclick="ChangeTab(event, 'second')">Языки</button>
-                            <button class="tablinks" onclick="ChangeTab(event, 'third')">Социальные сети</button>
+            <div class="tab">
+                <main id="firstprofile" class="profilecontent">
+                    <div class="maincontainer">
+                        <div class="imgnname">
+                            <img src="assets/img/avatars/first.jpg" class="img">
+                            <span class="iq underimg">Ли <span class="managers">Дмитрий</span></span>
+                            <div class="lineunder"></div>
                         </div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="info">
-                        <div id="first" class="tabcontent">
-                            <ol>
-                                <li>Первый факт</li>
-                                <li>Второй факт</li>
-                                <li>Третий факт</li>
-                            </ol>
-                        </div>
-                        <div id="second" class="tabcontent">
-                            #
-                        </div>
-                        <div id="third" class="tabcontent">
-                            <div class="social">
-                                <a href="https://instagram.com/d.elsium">
-                                    <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
-                                </a>
-                                <a href="https://vk.com/elsium">
-                                    <img src="assets/img/icons/vk.png" height="100" width="100"/>
-                                </a>
-                                <a href="https://t.me/Dou_Ble">
-                                    <img src="assets/img/icons/telegram.png" height="90" width="90"/>
-                                </a>
+                        <div class="tab">
+                            <div class="butnline">
+                                <div class="but">
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'first.first')" id="welcome">Краткая информация</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'first.second')">Языки</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'first.third')">Социальные сети</button>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="info">
+                                <div id="first.first" class="tabcontent">
+                                    <ol>
+                                        <li>Жил в городе, созвучном с названием пистолета</li>
+                                        <li>Программирую на ЦЭ</li>
+                                        <li>GOTO forever</li>
+                                    </ol>
+                                </div>
+                                <div id="first.second" class="tabcontent">
+                                    <div id="diagramdima"></div>
+                                </div>
+                                <div id="first.third" class="tabcontent">
+                                    <div class="social">
+                                        <a href="https://instagram.com/d.elsium">
+                                            <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://vk.com/elsium">
+                                            <img src="assets/img/icons/vk.png" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://t.me/Dou_Ble">
+                                            <img src="assets/img/icons/telegram.png" height="90" width="90"/>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </main>
+                <main id="secondprofile" class="profilecontent">
+                    <div class="maincontainer">
+                        <div class="imgnname">
+                            <img src="assets/img/avatars/second.jpg" class="img">
+                            <span class="iq underimg" style="margin-left: 6px">Боровиков <span class="managers">Денис</span></span>
+                            <div class="lineunder"></div>
+                        </div>
+                        <div class="tab">
+                            <div class="butnline">
+                                <div class="but">
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'second.first')" id="welcome">Краткая информация</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'second.second')">Языки</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'second.third')">Социальные сети</button>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="info">
+                                <div id="second.first" class="tabcontent">
+                                    <ol>
+                                        <li>Профессиональный программист на Basic</li>
+                                        <li>HTML язык программирования</li>
+                                        <li>Робототехник</li>
+                                    </ol>
+                                </div>
+                                <div id="second.second" class="tabcontent">
+                                    <div id="diagramdenis"></div>
+                                </div>
+                                <div id="second.third" class="tabcontent">
+                                    <div class="social">
+                                        <a href="https://instagram.com/borovikoffich">
+                                            <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://vk.com/kivorob">
+                                            <img src="assets/img/icons/vk.png" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://t.me/kivorob">
+                                            <img src="assets/img/icons/telegram.png" height="90" width="90"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <main id="thirdprofile" class="profilecontent">
+                    <div class="maincontainer">
+                        <div class="imgnname">
+                            <img src="assets/img/avatars/third.jpg" class="img">
+                            <span class="iq underimg" style="margin-left: 10px">Хомулло <span class="managers">Степан</span></span>
+                            <div class="lineunder"></div>
+                        </div>
+                        <div class="tab">
+                            <div class="butnline">
+                                <div class="but">
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'third.first')" id="welcome">Краткая информация</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'third.second')">Языки</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'third.third')">Социальные сети</button>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="info">
+                                <div id="third.first" class="tabcontent">
+                                    <ol>
+                                        <li>ТИМЛИД</li>
+                                        <li>Гений псюсов</li>
+                                        <li>Программное воспитание</li>
+                                    </ol>
+                                </div>
+                                <div id="third.second" class="tabcontent">
+                                    <div id="diagramstepa"></div>
+                                </div>
+                                <div id="third.third" class="tabcontent">
+                                    <div class="social">
+                                        <a href="https://instagram.com/stepashx">
+                                            <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://vk.com/stepan.khomullo">
+                                            <img src="assets/img/icons/vk.png" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://t.me/stepanh0">
+                                            <img src="assets/img/icons/telegram.png" height="90" width="90"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <main id="fouthprofile" class="profilecontent">
+                    <div class="maincontainer">
+                        <div class="imgnname">
+                            <img src="assets/img/avatars/fouth.jpg" class="img">
+                            <span class="iq underimg">Ли <span class="managers">Николай</span></span>
+                            <div class="lineunder"></div>
+                        </div>
+                        <div class="tab">
+                            <div class="butnline">
+                                <div class="but">
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'fouth.first')" id="welcome">Краткая информация</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'fouth.second')">Языки</button>
+                                    </div>
+                                    <div class="betweenbut">
+                                        <button class="tablinks" onclick="ChangeTab(event, 'fouth.third')">Социальные сети</button>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="info">
+                                <div id="fouth.first" class="tabcontent">
+                                    <ol>
+                                        <li>Знает сколько будет 1000-7</li>
+                                        <li>Веселый человека</li>
+                                        <li>Человек-бублик</li>
+                                    </ol>
+                                </div>
+                                <div id="fouth.second" class="tabcontent">
+                                    <div id="diagramkolia"></div>
+                                </div>
+                                <div id="fouth.third" class="tabcontent">
+                                    <div class="social">
+                                        <a href="https://instagram.com/deaddynastydie">
+                                            <img src="assets/img/icons/instagram.jpg" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://vk.com/deaddinastydie">
+                                            <img src="assets/img/icons/vk.png" height="100" width="100"/>
+                                        </a>
+                                        <a href="https://t.me/deaddynastydie">
+                                            <img src="assets/img/icons/telegram.png" height="90" width="90"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="butfl" style="margin-top: 20px">
+                    <button class="profilelinks" onclick="profile(event, 'firstprofile')" id="mainprofile">Дмитрий Ли</button>
+                    <button class="profilelinks" onclick="profile(event, 'secondprofile')">Денис Боровиков</button>
+                    <button class="profilelinks" onclick="profile(event, 'thirdprofile')">Степан Хомулло</button>
+                    <button class="profilelinks" onclick="profile(event, 'fouthprofile')">Николай Ли</button>
                 </div>
             </div>
-        </main>
+            <main style="height: 600px">
+                <div class="tell">
+                    <span class="iq">IQ</span>
+                    <span class="managers">Managers</span>
+                </div>
+                <p class="font tellcol">Команда была основана в 2021 году. На данный момент состоит из 4х участников: </p>
+                <div class="tellcol font">
+                    <p>Степан Хомулло - тим лид</p>
+                    <p>Денис Боровиков</p>
+                    <p>Дмитрий Ли</p>
+                    <p>Николай Ли</p>
+                </div>
+                <div class="tellcol font">
+                    <p>Изначально планировалось множество различных названий:</p>
+                    <p>SmokingTeam</p>
+                    <p>KSNTeam</p>
+                    <p>UnTimeLimited</p>
+                </div>
+                <div class="tellcol font">
+                    <p>Но затем наша команда утвердила название</p>
+                    <div class="maincontainer">
+                        <span class="iq">IQ</span>
+                        <span class="managers">Managers</span>
+                    </div>
+                    <p>Палитра данного сайта была подобрана в стиле <a href="https://vk.com">vk.com</a></p>
+                    <p>Использовался шрифт Tahoma</p>
+                    <p>В палитре использованы оригинальные цвета Vk</p>
+                </div>
+                <img src="" alt="">
+            </main>
+        </div>
         <script src="assets/scripts/index.js"></script>
     </body>
-
 </html>
