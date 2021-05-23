@@ -60,7 +60,9 @@ button:active {
     margin-top: 40px;
     margin-left: 50px;
 }
-
+.litlemar {
+    margin-left: 2px;
+}
 .font {
     font-family: Tahoma;
     font-size: 20px;
